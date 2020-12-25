@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, "Yu Gothic Medium", "Yu Gothic", sans-serif;
+  background-color: #44382f;
+}
+
+/*見出し　Start*/
+.head {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.head__mv {
+  width: 100vw;
+  border-bottom: 10px solid #928871;
+  z-index: -1;
+}
+
+.head__pc {
+  display: none;
+}
+
+.head__box {
+  position: relative;
+  z-index: -1;
+}
+
+.head__box::before {
+  position: absolute;
+  left: 0;
+  bottom: 13px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+}
+
+.head__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 150px;
+  height: 23px;
+  margin:0;
+}
+/*見出し　End*/
+
+/*メイン　Start*/
+.main {
+  width: 355px;
+  margin: 0 auto;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 170px;
+}
+
+.item__img {
+  width: 300px;
+  height: 200px;
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.item__img--02 {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.item__box {
+  position: relative;
+  margin-left: 10px;
+}
+
+.item__box:before {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 300px;
+  height: 200px;
+  background-color: #928871;
+  content: "";
+  z-index: -1;
+}
+
+.item__box--02 {
+  margin-left: 45px;
+  margin-bottom: 190px;
+}
+
+.item__box--02:before {
+  top: 10px;
+  left: 10px;
+}
+
+.item__content {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 300px;
+  height: 220px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.item__content:before {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 300px;
+  height: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  content: "";
+}
+
+.item__content--02 {
+  left: 0;
+}
+
+.item__content--02:before {
+  top: -10px;
+  left: 10px;
+}
+
+.item__title {
+  padding-left: 30px;
+  background: url("../image/coffee_beans.svg") left 0 center / 20px 21px no-repeat;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.item__text {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+/*メイン End*/
+
+/*お知らせ　Start*/
+.information {
+  position: relative;
+  width: 345px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.information:before {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  content: "";
+  z-index: -1;
+}
+
+.information__title {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.information__content {
+  width: 100%;
+  font-size: 12px;
+  text-align: left;
+}
+
+.information__date {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.information__text {
+  display: block;
+  width: 285px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.information__link {
+  color: #fff;
+}
+/*お知らせ End*/
+
+/*補足　Start*/
+.foot {
+  margin-top: 70px;
+  list-style: none;
+  text-align: center;
+}
+
+.foot__logo {
+  width: 100px;
+}
+
+.foot__address {
+  margin: 15px 0 30px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.foot__box {
+  padding: 0;
+}
+
+.foot__list {
+  display: inline;
+}
+
+.foot__list:first-child {
+  padding-right: 17px;
+}
+
+.foot__touch {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.foot__icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+.foot__text {
+  margin-left: 5px;
+  color: #fff;
+  font-size: 10px;
+}
+/*補足　End*/
+
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: #928871;
+  font-size: 10px;
+}
