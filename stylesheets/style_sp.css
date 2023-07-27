@@ -197,6 +197,16 @@ body {
 }
 /*お知らせ End*/
 
+/*GA計測要素　Start*/
+.ga__hid__box {
+  padding-bottom: 10px;
+}
+
+.ga__box {
+  padding-bottom: 10px;
+}
+/*GA計測要素 End*/
+
 /*補足　Start*/
 .foot {
   margin-top: 70px;
